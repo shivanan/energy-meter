@@ -1,0 +1,145 @@
+{
+  "version": "2.0",
+  "models": [
+    {
+      "Key": "3",
+      "Name": "EnergyMeter",
+      "Definition": {
+        "version": "v2",
+        "attributes": [],
+        "flows": {
+          "blocks": [
+            {
+              "title": "Action",
+              "type": "actionstart",
+              "id": "0893a44b-80fb-42e8-b8e8-c8da0dd715f9",
+              "position": {
+                "left": 92,
+                "top": 117
+              },
+              "surface": "GetValue",
+              "connections": {
+                "inputs": [],
+                "outputs": [
+                  {
+                    "source": "0893a44b-80fb-42e8-b8e8-c8da0dd715f9:output:output",
+                    "target": "211cc3ba-be58-45a7-e431-797006f8cce6:input:trigger"
+                  }
+                ]
+              },
+              "inputValues": [],
+              "outputValues": [
+                {
+                  "id": "output",
+                  "type": "",
+                  "label": "All Output",
+                  "description": "",
+                  "documentation": "",
+                  "example": "",
+                  "dataType": ""
+                },
+                {
+                  "id": "__error__",
+                  "type": "error",
+                  "label": "Error",
+                  "description": "",
+                  "documentation": "",
+                  "example": "",
+                  "dataType": ""
+                }
+              ],
+              "actionName": "GetValue",
+              "initiate": false,
+              "published": false,
+              "debug": false,
+              "roles": [],
+              "static": true,
+              "canOverrideCredentials": false,
+              "docs": ""
+            },
+            {
+              "title": "Output",
+              "type": "actionoutput",
+              "id": "211cc3ba-be58-45a7-e431-797006f8cce6",
+              "position": {
+                "left": 456,
+                "top": 166
+              },
+              "surface": "GetValue",
+              "connections": {
+                "inputs": [
+                  {
+                    "source": "0893a44b-80fb-42e8-b8e8-c8da0dd715f9:output:output",
+                    "target": "211cc3ba-be58-45a7-e431-797006f8cce6:input:trigger"
+                  }
+                ],
+                "outputs": []
+              },
+              "inputValues": [
+                {
+                  "id": "input",
+                  "type": "",
+                  "label": "Value",
+                  "value": "250",
+                  "description": "",
+                  "documentation": "",
+                  "transformation": "",
+                  "disablelog": ""
+                },
+                {
+                  "id": "trigger",
+                  "type": "",
+                  "label": "Trigger",
+                  "value": "",
+                  "description": "",
+                  "documentation": "",
+                  "transformation": "",
+                  "disablelog": ""
+                }
+              ],
+              "outputValues": [],
+              "fieldName": "value"
+            }
+          ],
+          "position": {
+            "top": 0,
+            "left": 0
+          }
+        },
+        "sources": [
+          {
+            "name": "GetValue",
+            "published": false,
+            "static": true,
+            "initiate": false,
+            "canOverrideCredentials": false,
+            "outputs": [
+              "value"
+            ],
+            "parameters": []
+          }
+        ],
+        "actions": [
+          {
+            "name": "GetValue",
+            "published": false,
+            "static": true,
+            "initiate": false,
+            "canOverrideCredentials": false,
+            "outputs": [
+              "value"
+            ],
+            "parameters": []
+          }
+        ],
+        "uioptions": {}
+      },
+      "UIDefinition": null,
+      "MetadataDictionary": "null",
+      "Icon": "",
+      "ApiRoutes": [],
+      "JSModules": [],
+      "ModelCollections": []
+    }
+  ]
+}
