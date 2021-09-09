@@ -1,10 +1,10 @@
 {
     "id": "0da12404-2574-4eaf-d3ed-374e0e9e069b",
-    "author": "",
+    "author": "eutech",
     "widgets": [
         {
             "id": "energy_widget",
-            "name": "energy_widget",
+            "name": "Sample Energy Widget",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
