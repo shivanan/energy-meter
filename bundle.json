@@ -1,0 +1,22 @@
+{
+    "id": "0da12404-2574-4eaf-d3ed-374e0e9e069b",
+    "author": "",
+    "widgets": [
+        {
+            "id": "energy_widget",
+            "name": "energy_widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+    ],
+    "sidebarLinks": [
+        
+    ],
+    "uis": [
+       
+    ],
+    "menuItems": [
+        
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "id": "aa563929-7e98-4ad6-8daa-088e086fb01f",
+    "author": "",
+    "widgets": [
+        {
+            "id": "energy_widget",
+            "name": "energy_widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+    ],
+    "sidebarLinks": [
+        {
+            "id": "energy_widgetLink",
+            "label": "",
+            "description": "",
+            "target": "",
+            "icon": "",
+            "roles":[]
+        }
+    ],
+    "uis": [
+        {
+            "id": "energy_widgetLink",
+            "label":"",
+            "description": "",
+            "roles": []
+        }
+    ],
+    "menuItems": [
+        {
+            "id": "energy_widgetLink",
+            "title": "energy_widget"
+        }
+    ]
+}
