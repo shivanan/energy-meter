@@ -24,6 +24,10 @@
                   {
                     "source": "0893a44b-80fb-42e8-b8e8-c8da0dd715f9:output:output",
                     "target": "211cc3ba-be58-45a7-e431-797006f8cce6:input:trigger"
+                  },
+                  {
+                    "source": "0893a44b-80fb-42e8-b8e8-c8da0dd715f9:output:output",
+                    "target": "1a1d96df-6e8e-404b-db72-41bb0411740a:input:trigger"
                   }
                 ]
               },
@@ -62,8 +66,8 @@
               "type": "actionoutput",
               "id": "211cc3ba-be58-45a7-e431-797006f8cce6",
               "position": {
-                "left": 456,
-                "top": 166
+                "left": 531,
+                "top": 111
               },
               "surface": "GetValue",
               "connections": {
@@ -80,7 +84,7 @@
                   "id": "input",
                   "type": "",
                   "label": "Value",
-                  "value": "250",
+                  "value": "400",
                   "description": "",
                   "documentation": "",
                   "transformation": "",
@@ -99,6 +103,49 @@
               ],
               "outputValues": [],
               "fieldName": "value"
+            },
+            {
+              "title": "Output",
+              "type": "actionoutput",
+              "id": "1a1d96df-6e8e-404b-db72-41bb0411740a",
+              "position": {
+                "left": 543,
+                "top": 281
+              },
+              "surface": "GetValue",
+              "connections": {
+                "inputs": [
+                  {
+                    "source": "0893a44b-80fb-42e8-b8e8-c8da0dd715f9:output:output",
+                    "target": "1a1d96df-6e8e-404b-db72-41bb0411740a:input:trigger"
+                  }
+                ],
+                "outputs": []
+              },
+              "inputValues": [
+                {
+                  "id": "input",
+                  "type": "",
+                  "label": "Value",
+                  "value": "high",
+                  "description": "",
+                  "documentation": "",
+                  "transformation": "",
+                  "disablelog": ""
+                },
+                {
+                  "id": "trigger",
+                  "type": "",
+                  "label": "Trigger",
+                  "value": "",
+                  "description": "",
+                  "documentation": "",
+                  "transformation": "",
+                  "disablelog": ""
+                }
+              ],
+              "outputValues": [],
+              "fieldName": "status"
             }
           ],
           "position": {
@@ -114,7 +161,8 @@
             "initiate": false,
             "canOverrideCredentials": false,
             "outputs": [
-              "value"
+              "value",
+              "status"
             ],
             "parameters": []
           }
@@ -127,7 +175,8 @@
             "initiate": false,
             "canOverrideCredentials": false,
             "outputs": [
-              "value"
+              "value",
+              "status"
             ],
             "parameters": []
           }

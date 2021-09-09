@@ -10,12 +10,16 @@ interface IWidgetProps {
 
 const Energy_widgetWidget: React.FunctionComponent<IWidgetProps> = (props) => {
     let [value,setValue] = React.useState(100);
+    let [status,setStatus] = React.useState('normal');
     React.useEffect(()=>{
-        props.uxpContext.executeAction('EnergyMeter','GetValue',{},{json:true}).then(data => setValue(data.value));
+        props.uxpContext.executeAction('EnergyMeter','GetValue',{},{json:true}).then(data => {
+            setValue(data.value);
+            setStatus(data.status);
+        });
     },[])
     return (
-        <WidgetWrapper className='energy-widget'>
-            <div>
+        <WidgetWrapper className={'energy-widget ' + (status=='high'?'high-value':'')}>
+            <div >
                 {`Energy Consumption: ${value}`}
             </div>
         </WidgetWrapper>
